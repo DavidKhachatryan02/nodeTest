@@ -1,6 +1,7 @@
 const os = require("os");
 const fs = require("fs");
 const ip = require("ip");
+const prompt = require("prompt-sync")();
 
 const today = new Date();
 
@@ -19,7 +20,9 @@ let formattedHour = hour + ":" + min + ":" + sec;
 
 let opSistem = os.type() + " " + os.release();
 
-fs.createWriteStream("text.txt").write(
+let fileName = prompt("FileName: ");
+
+fs.createWriteStream(fileName).write(
   `File created : ${formattedDay} , ${formattedHour}
   
 OS: ${opSistem}
