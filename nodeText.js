@@ -23,7 +23,7 @@ let opSistem = os.type() + " " + os.release();
 let fileName = prompt("FileName: ");
 
 fs.createWriteStream(fileName).write(
-  `File created : ${formattedDay} , ${formattedHour}
+  `File created : ${formattedDay} ${formattedHour}
   
 OS: ${opSistem}
 CPU: ${os.cpus()[0].model}
