@@ -1,6 +1,0 @@
-File created : 13/06/2023 , 19:46:19
-  
-OS: Windows_NT 10.0.22621
-CPU: AMD Ryzen 5 5500U with Radeon Graphics         
-IP: 192.168.10.74
-  
